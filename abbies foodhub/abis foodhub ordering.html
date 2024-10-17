@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-spring-boot"></i>
+                <span>Abbie's FoodHub</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="bc7a0c399990de122f1b6e09d00e6c4c.jpg" alt="me" class="user-img">
+            <p>
+                <span class="bold">Unknown</span>
+                <span>User</span>
+            </p>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bx-home"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-food-menu"></i>
+                    <span class="nav-item">Menu</span>
+                </a>
+                <span class="tooltip">Menu</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-discount"></i>
+                    <span class="nav-item">Deals</span>
+                </a>
+                <span class="tooltip">Deals</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cart-add"></i>
+                    <span class="nav-item">Cart</span>
+                </a>
+                <span class="tooltip">Cart</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-store"></i>
+                    <span class="nav-item">About Us</span>
+                </a>
+                <span class="tooltip">About Us</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out-circle"></i>
+                    <span class="nav-item">Log out</span>
+                </a>
+                <span class="tooltip">Log out</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="homecontainer">
+            <div class="homepage">
+                <h1>It's not just <br><span>FOOD.</span> It's an<br><span>EXPERIENCE</span></h1>
+
+                <img src="e5f17a32f989b51162927edb2f8d9747-removebg-preview.png">
+                <div>
+                    <p>We Bring Brofessional Chefs To Your Home TO Prepare Delicious,<br>Customized Meals At A Fraction
+                        Of The Cost, Get Your Food Easily Way<br>
+                        And Don't Worry About Time . </p>
+                    <button>See Menu</button>
+                    <p3>CHOOSE YOUR FEATURED CATEGORIES</p3>
+                    <div class="categories">
+                        <div class="catecard"
+                            style="background-image: url(40e87ef9aa296f0409dbbff3f5c2bdf7.jpg); background-size: cover;">
+                            <h2>MAIN COURSE</h2>
+                        </div>
+                        <div class="catecard"
+                            style="background-image: url(46cc4c8a6d0ca3795c57c22d0a44df0e.jpg); background-size: cover;">
+                            <h2>APPETIZERS</h2>
+                        </div>
+                        <div class="catecard"
+                            style="background-image: url(0b2dc5d900e921ad4e7c3717795ca753.jpg); background-size: cover;">
+                            <h2>DESSERT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="main-content">
+        <div class="menucontainer">
+            <h1>MENU</h1>
+            <div class="menupage">
+                <div class="categoriess">
+                    <div class=" category-title">MAIN COURSE</div> <!-- Title inside the first card -->
+                    <div class="catecards"><img src="a623676f5796b7b345ef051632a3d147.jpg">
+                        <div class="intro">
+                            <h4>Roasted Steak </h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button id="btn1" >ADD TO CART<i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="16bb500f393527bdcf3c7f3fe0a4569a.jpg">
+                        <div class="intro">
+                            <h4>Shrimp Paella</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button id="btn2">ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="5b9c8e5c9d5e9110931040af233f2cda.jpg">
+                        <div class="intro">
+                            <h4>Roasted Salmon</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="7c71c4937498498f29b2c66f8eef8a3e.jpg">
+                        <div class="intro">
+                            <h4>Manchurian Roll</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="26a2172fde256afad0960b299d22d72d.jpg">
+                        <div class="intro">
+                            <h4>Cacciatora</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="5893bdee3b07837626c1c0121e49b7e6.jpg">
+                        <div class="intro">
+                            <h4>Roasted Chicken</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="213e96dcba7776193c2e6ca51830f060.jpg">
+                        <div class="intro">
+                            <h4>Barbecue Pork</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="f00d2729590e9e339ed69eb32455fc23.jpg">
+                        <div class="intro">
+                            <h4>Fried Bangus</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="8efe29cf35056261983e1e688455770e.jpg">
+                        <div class="intro">
+                            <h4>Chinese Noodles</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART<i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="9d5f3ebd77ad649197b8e8758b1cffec.jpg">
+                        <div class="intro">
+                            <h4>Vegetable Stir</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoriess">
+                    <div class="category-title">APPETIZERS</div> <!-- Title inside the first card -->
+                    <div class="catecards"><img src="bb3bafd146897eb12b9e1ac0a10e828c.jpg">
+                        <div class="intro">
+                            <h4>Tunworth croquettes</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.99</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="cb44888b3dd28d9de0ca291201a21b99.jpg">
+                        <div class="intro">
+                            <h4>croqueta de Jamón</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.99</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="05f3c6ecbb51df3f49d77ddb44ae8c84.jpg">
+                        <div class="intro">
+                            <h4>Golden Delights</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.39</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="5d0b06b6f55468f52e507b0d4bc3914e.jpg">
+                        <div class="intro">
+                            <h4>Beetroot Cream</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.40</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="7f4825e9d526415e7696ffdc1607943c.jpg">
+                        <div class="intro">
+                            <h4>Nothing Hill</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.70</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="902e8faaf07b623510ca764a85943910.jpg">
+                        <div class="intro">
+                            <h4>Gourmet Pasta</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.20</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="e2473fb34d90342e1e30db99ee6c9db5.jpg">
+                        <div class="intro">
+                            <h4>Cranberry Sauce</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.30</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="72be5bccfbc964bba9fe2e0660bf8502.jpg">
+                        <div class="intro">
+                            <h4>Beef Cream</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.22</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="7e84a64bf29bb606c4365def4c8bf69d.jpg">
+                        <div class="intro">
+                            <h4>Braised Shortrib</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.35</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="eddc36bfeafb053b919738339af28e65.jpg">
+                        <div class="intro">
+                            <h4>Crunchy Shrimp</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.45</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoriess">
+                    <div class="category-title">DESSERT</div> <!-- Title inside the first card -->
+                    <div class="catecards"><img src="e8bb581f70265667f98543a212e0f73b.jpg">
+                        <div class="intro">
+                            <h4>Caramel Cheesecake</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.55</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="5a52bf65691fc38d85048924171ca5e2.jpg">
+                        <div class="intro">
+                            <h4>Reccette Flan</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.57</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="b8baca79495dcd9a90637b95d3f25cce.jpg">
+                        <div class="intro">
+                            <h4>Vanilla Panna Cotta</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.32</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="3559b3a127462ac896862e6034320303.jpg">
+                        <div class="intro">
+                            <h4>Blueberry Cheesecake </h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.59</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="8daca45c350747342d799ed3925aaa22.jpg">
+                        <div class="intro">
+                            <h4>Rosewater Ponna Cottax</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.11</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="ecdfca5d31226718af27cc7249aa18b9.jpg">
+                        <div class="intro">
+                            <h4>Chocolate Dessert</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.49</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="512c5e0050b2f99fce828f14c84b42b0.jpg">
+                        <div class="intro">
+                            <h4>Oreo Cookies Cheesecakes</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.23</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="4ce8ddc0e4d072dd46d3952b0b14416a.jpg">
+                        <div class="intro">
+                            <h4>Chocolate Mouse Cake</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.55</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="4c35cf8fc4a4d5eb82340949a2dd3304.jpg">
+                        <div class="intro">
+                            <h4>Marshmellow Cake</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.53</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                    <div class="catecards"><img src="4912e9a57867b48644029a93d92740f4.jpg">
+                        <div class="intro">
+                            <h4>Castle Chocolate</h4>
+                            <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                                    class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                                    style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                            </h6><h6>Price:<i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">5.58</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="pagedeals">
+            <div class="dealshead">
+                <h1>Exclusive Food Deals</h1>
+                <h2>Satisfy your cravings with our latest offers!</h2>
+                <h4>"Buy 3, Get 2 Free"</h4>
+            </div>
+
+            <!-- Deals cards start here -->
+            <div class="dealscon">
+                <div class="card-containerss">
+                    <div class="cardss">
+                        <img src="https://via.placeholder.com/150" alt="Food Item 1">
+                        <div class="card-info">
+                            <p>Food Item 1</p>
+                        </div>
+                    </div>
+
+                    <div class="cardss">
+                        <img src="https://via.placeholder.com/150" alt="Food Item 2">
+                        <div class="card-info">
+                            <p>Food Item 2</p>
+                        </div>
+                    </div>
+
+                    <div class="cardss">
+                        <img src="https://via.placeholder.com/150" alt="Food Item 3">
+                        <div class="card-info">
+                            <p>Food Item 3</p>
+                        </div>
+                    </div>
+
+                    <!-- Plus icon between card 3 and 4 -->
+                    <div class="plus-icon">+</div>
+
+                    <div class="cardss">
+                        <img src="https://via.placeholder.com/150" alt="Food Item 4">
+                        <div class="card-info">
+                            <p>Food Item 4</p>
+                        </div>
+                    </div>
+
+                    <div class="cardss">
+                        <img src="https://via.placeholder.com/150" alt="Food Item 5">
+                        <div class="card-info">
+                            <p>Food Item 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Deals cards end here -->
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="cartpages">
+            <div class="catecards" id="item1" style="display: none;" style="width: -50px;"><img src="a623676f5796b7b345ef051632a3d147.jpg">
+                <div class="intro">
+                    <h4>Roasted Steak </h4>
+                    <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                            class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                            style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                    </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button >ADD TO CART<i class='bx bxs-cart-add'></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="catecards" id="item2" style="display: none;"><img src="16bb500f393527bdcf3c7f3fe0a4569a.jpg">
+                <div class="intro">
+                    <h4>Shrimp Paella</h4>
+                    <h6>Rates: <i class='bx bxs-star bx-tada' style='color:#d7f508'></i><i
+                            class='bx bxs-star bx-tada' style='color:#d7f508'></i><i class='bx bxs-star bx-tada'
+                            style='color:#d7f508'></i><i class='bx bxs-star bx-tada' style='color:#d7f508'></i>
+                    </h6><h6>Price: <i class='bx bx-dollar' style='color:#08ec08'></i><span class="dollar">50</span></h6><button>ADD TO CART <i class='bx bxs-cart-add'></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="main-content">
+                <div class="aboutuspage">
+
+                </div>
+            </div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar'); // Correct selection
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="foodhub.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #9c8c66;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: .4rem .8rem;
+    transition: width 0.3s ease-in-out; 
+}
+
+.sidebar.active {
+    width: 250px;
+    transition: width 0.5s ease-in-out; 
+}
+
+.sidebar.active ~ .main-content {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar .top .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out; 
+    margin-left: 10px;
+}
+
+.sidebar.active .top .logo {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.2s; 
+}
+
+.top .logo i {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.user p {
+    color: #fff;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.active .user p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.2s; 
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #fff;
+    color: #12171e;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+
+.sidebar ul li .nav-item {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out; /
+}
+
+.sidebar.active ul li .nav-item {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.2s; 
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.main-content {
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+}
+.homecontainer{
+    background-color: #9c8c66;
+    border-radius: 25px;
+    padding: 30px 30px;
+    height: 95vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.homepage{
+    width: 100%;
+}
+.homepage span{
+    color: whitesmoke;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.homepage h1{
+    text-align: justify;
+    font-size: 50px;
+    margin-left: 50px;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+.homepage img{
+    width:40%;
+    height: 70vh;
+    position:absolute;
+    z-index:2;
+    left:700px;
+    top:-40px;
+}
+.homepage p{
+    position: absolute;
+    top:300px;
+    text-align:justify;
+    left:120px;
+    color:#ffff;
+    border-radius: 15px;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #ffffff25;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+.homepage button{
+    border-radius: 15px;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 5px 5px 12px #00000025;
+    background: #ffffff25;
+    overflow: hidden;
+    color: #ffff;
+    backdrop-filter: blur(4px);
+    border:none ;
+    position: absolute;
+    top: 420px;
+    left:150px;
+}
+.homepage button:hover{
+    background-color: white;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.menucontainer{
+   border-radius: 25px;
+   box-shadow: 5px 5px 12px 12px #00000025;
+  
+}
+.menucontainer h1{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.categories {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.catecard {
+    margin-top: 180px;
+    width: 100%;
+    height: 200px; /* Set a fixed height for each card */
+    border-radius: 15px;
+    border-top: 2px solid #ffffff75;
+    border-left: 2px solid #ffffff75;
+    box-shadow: 5px 5px 12px #00000025;
+    background: #ffffff25;
+    overflow: hidden;
+    color: #fff;
+    backdrop-filter: blur(4px);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content if added */
+}
+.catecard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.catecard h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    border-radius: 9px;
+    color: rgb(255, 253, 253);
+    box-shadow: 5px 5px 12px #00000035;
+    background: #ffffff25;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+.homepage p3{
+    position: absolute;
+    top: 450px;
+    left: 550px;
+    color: #fff;
+    font-size:20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menucontainer {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    background-color: #9c8c66;
+}
+
+.categoriess {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
+    grid-gap: 20px; /* Minimal space between cards */
+    padding: 20px;
+    margin-bottom: 40px; /* Space between categories */
+}
+/* Style for category title (above cards grid) */
+.category-title {
+    grid-column: span 5; 
+    text-align: center;
+    font-size: 1.8rem;
+    width: 50%;
+    position: relative;
+    left:320px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; 
+    padding: 80px 80px;
+    background-color: #ffff;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.category-title:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+.menucontainer h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* ari e adjust kada cards */
+.catecards {
+    width: 100%;
+    height: 350px; /* ari i adjust ag mga pic ug text */
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    box-shadow: 5px 5px 12px #00000025;
+    background: #ffffff25;
+    overflow: hidden;
+    color: #fff;
+    backdrop-filter: blur(4px);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover effect asa mga cards */
+.catecards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+}
+.catecards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    transition: transform 0.2s;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+}
+
+.catecards:hover {
+    transform: translateY(-5px);
+}
+
+.catecards img {
+    margin-top: 5px;
+    width: 200px;
+    height: 150px;
+    border-radius: 15px 15px 15px 15px;
+    object-fit: cover; /* Ensures the image covers the card without stretching */
+}
+
+.intro {
+    padding: 15px;
+    text-align: center;
+}
+
+.catecards h4 {
+    margin: 2px 0 5px;
+    color: black;
+    font-size: 1.5rem; /* Increased font size for better readability */
+}
+
+.catecards p {
+    font-size: 0.9rem; /* Adjusted font size for description */
+    color: #666;
+    margin: 5px 0;
+}
+
+.catecards h6 {
+    margin: 5px 0;
+    color: #12171e;
+}
+
+.price {
+    font-size: 1.2rem; /* Font size for price */
+    color: #d70000; /* Price color for emphasis */
+    margin: 5px 0;
+}
+
+.catecards button {
+    color: black;   
+    padding: 10px;
+    background-color: #d7f508; /* Changed button color for visibility */
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+.catecards button:hover {
+    background-color: #c6c505; /* Darker shade on hover */
+}
+.pagedeals {
+    height: 80vh;
+    background-color: #9c8c66;
+    border-radius: 25px;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.dealshead h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.dealshead h2 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+/* Deals container that holds the cards */
+.dealscon {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the cards to the top */
+}
+
+/* Card container with gap and layout */
+.card-containerss {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Styling for individual cards */
+.cardss {
+    width: 150px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Image inside the cards */
+.cardss img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Card information section (text) */
+.card-info {
+    padding: 10px;
+    color: white;
+}
+
+.card-info p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Plus icon between the cards */
+.plus-icon {
+    font-size: 5rem;
+    color: white;
+    margin: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dealshead h4{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+.cartpages{
+    background: #9c8c66;
+    height: 80vh;
+    width: 90%;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+.aboutuspage{
+    width: 90%;
+    height: 80vh;
+    background-color: #9c8c66;
+    border-radius: 15px;
+    margin-left: 70px;
+
+}

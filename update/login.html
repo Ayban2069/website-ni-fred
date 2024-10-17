@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Admin Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(fotor-ai-20241015222957.jpg);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background: #ff6347;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #e55347;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .link a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hide other form initially */
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="form-title">User Login</h1>
+        
+        <!-- User Login Form -->
+        <div id="user-form" class="form-container active" >
+            <form action="abis foodhub ordering.html">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="button" onclick="login()">Login</button>
+                <div class="link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggleForm()">Admin? Click here to sign up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Admin Signup Form -->
+        <div id="admin-form" class="form-container">
+            <form>
+                <div class="input-group">
+                    <label for="admin-username">Admin Username</label>
+                    <input type="text" id="admin-username" placeholder="Choose a username" required>
+                </div>
+                <div class="input-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" placeholder="Create a password" required>
+                </div>
+                <button type="button" class="button" onclick="checkPassword()">Sign Up</button>
+                <div class="link">
+                    <a href="#" onclick="toggleForm()">User? Click here to login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const userForm = document.getElementById('user-form');
+            const adminForm = document.getElementById('admin-form');
+            const formTitle = document.getElementById('form-title');
+
+            if (userForm.classList.contains('active')) {
+                userForm.classList.remove('active');
+                adminForm.classList.add('active');
+                formTitle.textContent = 'Admin Signup';
+            } else {
+                adminForm.classList.remove('active');
+                userForm.classList.add('active');
+                formTitle.textContent = 'User Login';
+            }
+        }
+
+
+        function login() {
+            // Placeholder for login logic
+            alert("Logging in as User!");
+        }
+        function signup() {
+            // Placeholder for signup logic
+            alert("Signing up as Admin!");
+        }
+
+  
+    
+
+function checkPassword() {
+    const usernameInput = document.getElementById('admin-username').value;
+    const passwordInput = document.getElementById('admin-password').value;
+    
+    // Check if username and password match
+    if (usernameInput === 'windy' && passwordInput === 'gapergwapo123') {
+        signup(); // Show signup message
+        window.location.href = 'admin/admin.html'; // Redirect to admin page
+    } else {
+        alert("Wrong Password. Please Try Again");
+    }
+}
+
+    </script>
+</body>
+</html>

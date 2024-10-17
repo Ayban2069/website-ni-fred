@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="test.css">
+    <!-- Offline Font Awesome (you need to download and serve locally) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li><a href="#orders"><i class="fa fa-shopping-cart"></i> Manage Orders</a></li>
+                <li><a href="#foods"><i class="fa fa-cutlery"></i> Manage Foods</a></li>
+                <li><a href="#categories"><i class="fa fa-list"></i> Manage Categories</a></li>
+                <li><a href="#users"><i class="fa fa-users"></i> Manage Users</a></li>
+                <li><a href="#statistics"><i class="fa fa-line-chart"></i> Statistics</a></li>
+                <li><a href="#settings"><i class="fa fa-cog"></i> Profile Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Dashboard Section -->
+            <section id="dashboard">
+                <h1>Dashboard Overview</h1>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <i class="fa fa-shopping-cart"></i>
+                        <h3>Total Orders</h3>
+                        <p>150</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-dollar"></i>
+                        <h3>Total Revenue</h3>
+                        <p>$12,500</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-spinner"></i>
+                        <h3>Pending Orders</h3>
+                        <p>15</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section id="orders">
+                <h1>Manage Orders</h1>
+                <!-- Order Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Items</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-list">
+                        <!-- Order rows will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Foods Section -->
+            <section id="foods">
+                <h1>Manage Foods</h1>
+                <button onclick="addFood()">Add Food Item</button>
+                <!-- Food Items List -->
+                <ul id="food-list">
+                    <!-- Food items will be dynamically populated here -->
+                </ul>
+            </section>
+
+            <!-- Categories Section -->
+            <section id="categories">
+                <h1>Manage Categories</h1>
+                <button onclick="addCategory()">Add Category</button>
+                <!-- Category List -->
+                <ul id="category-list">
+                    <!-- Categories will be dynamically populated here -->
+                </ul>
+            </section>
+
+            <!-- Users Section -->
+            <section id="users">
+                <h1>Manage Users</h1>
+                <!-- User Management List -->
+                <ul id="user-list">
+                    <!-- User items will be dynamically populated here -->
+                </ul>
+            </section>
+
+            <!-- Statistics Section -->
+            <section id="statistics">
+                <h1>View Statistics</h1>
+                <!-- You can add charts here -->
+                <div id="chart-area">
+                    <!-- Placeholder for chart -->
+                </div>
+            </section>
+
+            <!-- Profile Settings Section -->
+            <section id="settings">
+                <h1>Profile Settings</h1>
+                <!-- Settings Form -->
+                <form id="profile-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" value="Admin">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                    <button type="submit">Update Profile</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
